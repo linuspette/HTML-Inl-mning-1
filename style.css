@@ -1,0 +1,110 @@
+* {
+  margin-left: 10px;
+}
+
+form {
+  width: fit-content;
+  border: rgb(182, 182, 182);
+  border-width: 2px;
+  border-style: solid;
+}
+form label {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  display: block;
+}
+form input {
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  display: block;
+}
+form select {
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  display: block;
+}
+form textarea {
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  display: block;
+}
+form .button {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+canvas {
+  margin-top: 1rem;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  margin-top: 2rem;
+  border-top-color: gray;
+  border-top-style: solid;
+}
+footer p {
+  color: black;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+video {
+  margin-top: 1rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.blue {
+  color: #2f5496;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

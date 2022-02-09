@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inlämning 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="blue">Lorem ipsum</h2>
+    </header>
+
+    <main>
+        <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, expedita aspernatur. Distinctio vero
+                accusantium amet ab facere reprehenderit officia tempora nisi enim eligendi! Eaque voluptatibus voluptas
+                excepturi. At hic cumque officiis nesciunt adipisci rem, assumenda sunt voluptates totam sequi, vitae
+                nihil
+                incidunt sint, temporibus obcaecati. Soluta labore ratione asperiores, modi ullam assumenda perspiciatis
+                voluptates quod fugit, repellendus mollitia doloribus dolorum vero eos odio ea consectetur totam cumque?
+                Quod explicabo impedit rem id, dolorum error nihil cum sed ducimus at eum expedita labore ipsa earum
+                ipsam
+                saepe laboriosam vero similique facilis? Itaque quibusdam a impedit voluptatibus accusamus eveniet natus
+                dolor molestias.
+            </p>
+        </div>
+
+        <div>
+            <h3 class="blue">Lorem ipsum</h3>
+            <ul>
+                <li>Mjölk</li>
+                <li>Ägg</li>
+                <li>Mjöl</li>
+            </ul>
+            <ol>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ol>
+        </div>
+
+        <div>
+            <img src="/Images/sell_landscape_photography_online.jpg" style="width: 30%">
+        </div>
+
+        <div><a href="https://www.google.com/">Gå till Google</a></div>
+        <div><a href="https://www.google.com/" target="_blank">Gå till Google</a></div>
+
+        <div>
+            <ul>
+                <li>Konst</li>
+                <li>
+                    Sport
+                    <ol>
+                        <li>Fotboll</li>
+                        <li>Ishockey</li>
+                        <li>Discgolf</li>
+                    </ol>
+                </li>
+                <li>Djur</li>
+                <li>
+                    Fordon
+                    <ol>
+                        <li>
+                            Motorfordon
+                            <ol>
+                                <li>Bilar</li>
+                                <li>Motorcyklar</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li>Filmer</li>
+                <li>Böcker</li>
+            </ul>
+        </div>
+
+        <div>
+            <form class="formborder" method="post" action="https://formshow.systementor.se">
+                <div>
+                    <label for="name">För & Efternamn</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="phonenumber">Telefonnummer</label>
+                    <input type="tel" id="phonenumber" name="phonenumber" required>
+                    <label for="email">E-Postadress</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="allergier">Allergier</label>
+                </div>
+
+                <div class="tooltip">
+                    <select id="allergier" name="allergier" multiple>
+                        <option value="Stenfrukter">Stenfrukter</option>
+                        <option value="Nötter">Nötter</option>
+                        <option value="Pälsdjur">Pälsdjur</option>
+                        <option value="Skaldjur">Skaldjur</option>
+                        <option value="Gluten">Gluten</option>
+                    </select>
+                    <span class="tooltiptext">Tryck ned CTRL för att välja flera allergier</span>
+                </div>
+
+                <div>
+                    <label for="vip">Vill du ha VIP-paketet?</label>
+                    <input type="checkbox" value="true" id="vip" name="vip">
+                    <label for="lotteri">På evenemanget finns ett lotteri. Vänligen välj ett nummer mellan 1 -
+                        100</label>
+                    <input type="number" min="1" max="100" id="lotteri" name="lotteri" required>
+                    <label for="otherinfo">Ange ytterligare information</label>
+                    <textarea id="otherinfo" name="otherinfo"></textarea>
+                </div>
+                <div>
+                    <input class="button" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+
+        <div>
+            <video width="320" height="240" controls>
+                <!--Main-->
+                <source
+                    src="https://aspcodeprod.blob.core.windows.net/school-dev/Sample-AVI-Video-File-for-Testing.avi">
+                <!--Alt-->
+                <source
+                    src="https://aspcodeprod.blob.core.windows.net/school-dev/Sample-MP4-Video-File-for-Testing.mp4">
+                <p>Din webläsare verkar vara gammal. Det finns nyare alternativ än Internet Explorer....</p>
+            </video>
+        </div>
+
+        <div style="margin-top: 1rem">
+            <picture>
+                <source media="(max-width: 799px)"
+                    srcset="https://www.skk.se/contentassets/56a9af2e807c48c8ac91400791192914/149-welsh-corgi-pembroke.jpg?w=460&ch=-1&up=True">
+                <source media="(min-width: 800px)"
+                    srcset="https://cdn.pixabay.com/photo/2020/03/31/19/20/dog-4988985_960_720.jpg">
+                <img src="https://cdn.pixabay.com/photo/2020/03/31/19/20/dog-4988985_960_720.jpg" alt="En fin corgi">
+            </picture>
+        </div>
+
+        <div>
+            <canvas id="rita" width="250" height="75"></canvas>
+        </div>
+    </main>
+
+    <footer>
+        <p>(C) 2022 - Linus</p>
+    </footer>
+</body>
+<script src="canvas.js" type="text/javascript"></script>
+
+</html>
